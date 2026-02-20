@@ -19,7 +19,8 @@ class Player():
             Player.lvl_up()
     
     def take_dmg(self, enemy_dmg):
-        self.hp = self.hp - enemy_dmg
+        if Player.is_alive() == True:
+            self.hp = self.hp - enemy_dmg
 
     def move():
         pass
